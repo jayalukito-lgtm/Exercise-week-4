@@ -9,8 +9,9 @@
         body {
             display: flex;
             justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
+            height: fit-content;
             margin: 0;
             background-color: #f0f0f0;
         }
@@ -41,10 +42,8 @@
 </head>
 <body>
 
+     <div id="canvas-container"></div>
 <div class="container">
-    <div class="row" style="margin-bottom: 50px;">
-        <div id="canvas-container"></div>
-    </div>
 
 
     <div class="row">
@@ -119,6 +118,7 @@
         .attr("height", 120)
         .attr("fill", "#8B4513"); // Saddle Brown
 
+    svg.append("rect").attr("x", 140).attr("y", 70).attr("width", 20).attr("height", 80).attr("fill", "black");
     // 8. House Roof (Polygon)
     svg.append("polygon")
         .attr("points", "120,160 200,80 280,160")
