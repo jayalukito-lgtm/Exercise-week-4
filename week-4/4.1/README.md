@@ -25,3 +25,10 @@ Prompt:
 
 Output:
 1. Original svj code with added chimney on the side of the roof
+
+Step 4
+Prompt:
+1. group the window using the <g>
+
+Output:
+1. the code is updated with the append <g> for the windows

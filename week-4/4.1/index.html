@@ -125,20 +125,20 @@
         .attr("fill", "#CD853F"); // Peru Brown
 
     // 9. Left Window (Rectangle)
-    svg.append("rect")
-        .attr("x", 135)
-        .attr("y", 175)
+    const windowGroup = svg.append("g")
+        .attr("fill", "#ADD8E6"); // We only declare the color once on the group!
+        
+    // Left Window (Using translate to move it to x:135, y:175)
+    windowGroup.append("rect")
         .attr("width", 30)
         .attr("height", 30)
-        .attr("fill", "#ADD8E6"); // Light Blue
+        .attr("transform", "translate(135, 175)"); 
 
-    // 10. Right Window (Rectangle)
-    svg.append("rect")
-        .attr("x", 235)
-        .attr("y", 175)
+    // Right Window (Using translate to move it to x:235, y:175)
+    windowGroup.append("rect")
         .attr("width", 30)
         .attr("height", 30)
-        .attr("fill", "#ADD8E6"); // Light Blue
+        .attr("transform", "translate(235, 175)");
 
     // 11. Door (Rectangle)
     svg.append("rect")
